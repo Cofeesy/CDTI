@@ -67,14 +67,6 @@ python scripts/generate_masks.py --dataset pems08
 python scripts/generate_masks.py --dataset pems08 --missing_rate 0.2 --mechanisms mcar mar
 ```
 
-The mask generation supports three mechanisms:
-- **MCAR** (Missing Completely At Random): Data missing without any pattern
-- **MAR** (Missing At Random): Data missing based on observed values
-- **MNAR** (Missing Not At Random): Data missing based on unobserved values
-
-Masks are saved to `data/mask/{dataset}/` directory with filename format:
-`{dataset}_{mode}_{mechanism}_{missing_rate}_{seed}.csv`
-
 
 ## 3. Demo Running
 
